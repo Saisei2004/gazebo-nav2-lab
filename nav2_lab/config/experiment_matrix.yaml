@@ -1,0 +1,92 @@
+schema_version: 1
+robot:
+  primary_model: turtlebot3_waffle
+  alternatives:
+    - turtlebot3_waffle_pi
+    - turtlebot4_standard
+
+lanes:
+  known_environment_optimization:
+    purpose: Tune Nav2 parameters and system choices on fixed known maps.
+    world_sets:
+      - warehouse_small
+      - office_loop
+      - narrow_corridors
+    repetitions_per_candidate: 5
+    start_goal_policy:
+      start_positions: fixed_and_jittered
+      goal_positions: fixed_and_jittered
+      yaw_angles: [0, 45, 90, 135, 180, 225, 270, 315]
+    metrics:
+      - success_rate
+      - time_to_goal_sec
+      - path_length_m
+      - normalized_path_efficiency
+      - recovery_count
+      - near_collision_count
+      - cpu_mem_peak
+
+  unknown_environment_optimization:
+    purpose: Evaluate generalization to unseen obstacle layouts and partial maps.
+    world_sets:
+      - random_blocks
+      - random_corridors
+      - cluttered_room
+    repetitions_per_candidate: 10
+    start_goal_policy:
+      start_positions: sampled_collision_free
+      goal_positions: sampled_collision_free
+      yaw_angles: random
+    metrics:
+      - success_rate
+      - time_to_goal_sec
+      - stuck_rate
+      - recovery_count
+      - planner_failure_count
+      - controller_failure_count
+      - robustness_score
+
+  autonomous_exploration:
+    purpose: Develop exploration policies that maximize map coverage without hand-given goals.
+    world_sets:
+      - unseen_rooms
+      - branching_hallways
+      - cluttered_room
+    repetitions_per_candidate: 10
+    exploration_targets:
+      - coverage_50_percent
+      - coverage_80_percent
+      - coverage_95_percent
+    metrics:
+      - explored_ratio
+      - time_to_50_percent_sec
+      - time_to_80_percent_sec
+      - frontier_blacklist_count
+      - total_distance_m
+      - stuck_rate
+
+search_spaces:
+  baseline_nav2:
+    planner_plugins:
+      - NavfnPlanner
+      - SmacPlanner2D
+      - SmacHybrid
+    controller_plugins:
+      - DWB
+      - RegulatedPurePursuit
+      - MPPI
+    parameters:
+      max_vel_x: [0.18, 0.22, 0.26, 0.30]
+      acc_lim_x: [0.4, 0.7, 1.0]
+      inflation_radius: [0.35, 0.50, 0.70, 0.90]
+      cost_scaling_factor: [2.0, 3.0, 5.0, 8.0]
+      goal_tolerance_xy: [0.10, 0.15, 0.20]
+      goal_tolerance_yaw: [0.10, 0.20, 0.35]
+
+optimization_methods:
+  - random_search
+  - latin_hypercube
+  - successive_halving
+  - bayesian_optimization_when_library_available
+  - multi_objective_pareto_selection
+  - mppi_specific_parameter_sweeps
