@@ -43,6 +43,23 @@ source ./env.sh
 ./scripts/list_experiments.py
 ```
 
+## Use Codex Inside This Lab
+
+Codex CLI can be installed locally inside this workspace without sudo:
+
+```bash
+cd ~/saisei_ws/gazebo_lab/nav2_lab
+./scripts/install_codex_cli.sh
+source ./env.sh
+./scripts/codex_nav2.sh
+```
+
+Custom prompt:
+
+```bash
+./scripts/codex_nav2.sh prompts/codex_nav2_default.md
+```
+
 ## Run Book
 
 The agent should keep appending every experiment and finding to:
