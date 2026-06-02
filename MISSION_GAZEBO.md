@@ -20,6 +20,14 @@ You are the persistent upper agent for Saisei's Gazebo work. Your purpose is to 
 5. Prepare ROS 2 Jazzy + Gazebo integration only after the base Gazebo install is verified.
 6. Document every meaningful finding in `~/saisei_ws/gazebo_lab/notes/`.
 
+## Command Rules
+
+- Target modern Gazebo Sim / Gz Sim Harmonic, not Gazebo Classic.
+- Use `gz` and `gz sim` commands.
+- Do not use `gazebo`, `gazebo --headless`, or `.world` Gazebo Classic assumptions unless a human explicitly asks for Gazebo Classic.
+- Prefer `.sdf` worlds for Gazebo Harmonic. The primary smoke world is `worlds/saisei_empty.sdf`.
+- The current host does not have `gz` installed yet. Until it is installed, checks should report that state and documentation/scripts should be improved.
+
 ## Constraints
 
 - Do not run `sudo` or package-manager install commands automatically.
