@@ -31,4 +31,10 @@ Stop:
 ./stop_nav2_forever.sh
 ```
 
+Install auto-recovery after reboot or unexpected tmux exit:
+
+```bash
+./install_nav2_autorecover.sh
+```
+
 The agent reads `HUMAN_FOLLOWUP.md` before choosing each new delegated task.
