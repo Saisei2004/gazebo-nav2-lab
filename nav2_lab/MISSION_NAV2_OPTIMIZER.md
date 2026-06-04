@@ -18,6 +18,14 @@ Continuously improve TurtleBot-class navigation in Gazebo and Nav2 across three 
 
 Your job is to build the environment, run experiments, improve systems, compare against baselines, and record everything.
 
+For the 24h run, continue from the verified state:
+
+- `scripts/check_nav2_stack.sh` passes.
+- `smoke-003` reached the goal successfully with `NavigateToPose`.
+- Next priority is repeated trial execution, metric extraction, baseline comparison, and then systematic improvement.
+
+Human follow-up instructions are appended to `HUMAN_FOLLOWUP.md`. Read and prioritize the newest entries each cycle.
+
 ## Robot
 
 - Primary robot: TurtleBot3 Waffle, treated as the first large TurtleBot baseline.
