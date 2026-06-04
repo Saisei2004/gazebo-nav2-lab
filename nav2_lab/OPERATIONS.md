@@ -1,16 +1,16 @@
 # Nav2 24h Operations
 
-Start the 24h agent from DGX:
+Start the forever agent from DGX:
 
 ```bash
 cd ~/saisei_ws/dev_agent
-./start_nav2_24h.sh
+./start_nav2_forever.sh
 ```
 
 Check status:
 
 ```bash
-./status_nav2_24h.sh
+./status_nav2_forever.sh
 ```
 
 Append a human follow-up instruction:
@@ -28,7 +28,7 @@ Show follow-up inbox:
 Stop:
 
 ```bash
-./stop_nav2_24h.sh
+./stop_nav2_forever.sh
 ```
 
 The agent reads `HUMAN_FOLLOWUP.md` before choosing each new delegated task.

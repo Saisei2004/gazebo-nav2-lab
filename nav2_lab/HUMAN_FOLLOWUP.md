@@ -6,4 +6,4 @@ Newest instructions should be treated as highest priority unless they conflict w
 
 ## 2026-06-04T17:50:00+09:00
 
-Run for 24 hours. Continue from the successful `smoke-003` NavigateToPose trial. Build repeated trial execution, metric extraction, baseline comparisons, and then improve Nav2 behavior across known environments, unknown environments, and autonomous exploration. Keep appending timestamped results and decisions to reports.
+Run continuously until a human explicitly stops you. Continue from the successful `smoke-003` NavigateToPose trial. Build repeated trial execution, metric extraction, baseline comparisons, and then improve Nav2 behavior across known environments, unknown environments, and autonomous exploration. Keep appending timestamped results and decisions to reports.
