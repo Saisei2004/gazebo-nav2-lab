@@ -34,6 +34,13 @@ cd ~/saisei_ws/gazebo_lab/nav2_lab
 ./scripts/install_ros_nav2_turtlebot3.sh
 ```
 
+If `apt-get update` fails with `EXPKEYSIG CD63F8B21266DE3C svc-workbench`, refresh the NVIDIA AI Workbench apt key first:
+
+```bash
+./scripts/fix_nvidia_workbench_apt_key.sh
+./scripts/install_ros_nav2_turtlebot3.sh
+```
+
 After install:
 
 ```bash
