@@ -3,6 +3,14 @@ set -euo pipefail
 
 cd "$(dirname "$0")/.."
 
+if [[ -f ./env.sh ]]; then
+  # ROS setup files may read unset variables, so source them before strict mode.
+  set +u
+  # shellcheck disable=SC1091
+  source ./env.sh
+  set -u
+fi
+
 echo "== System =="
 uname -a
 cat /etc/os-release | sed -n '1,8p'
@@ -20,10 +28,7 @@ for cmd in gz ros2 colcon; do
   fi
 done
 
-if [[ -f /opt/ros/jazzy/setup.bash ]]; then
-  # shellcheck disable=SC1091
-  source /opt/ros/jazzy/setup.bash
-else
+if [[ ! -f /opt/ros/jazzy/setup.bash ]]; then
   echo "MISSING /opt/ros/jazzy/setup.bash"
   missing=1
 fi
