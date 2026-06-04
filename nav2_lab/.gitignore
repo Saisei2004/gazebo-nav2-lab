@@ -1,3 +1,4 @@
 .tools/
+logs/
 scripts/__pycache__/
 *.pyc
