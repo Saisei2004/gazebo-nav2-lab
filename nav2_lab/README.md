@@ -75,6 +75,18 @@ For a quick non-Gazebo harness test:
 ./scripts/run_all_tests.sh
 ```
 
+Continuously run real batches in a detached tmux session:
+
+```bash
+tmux new -ds nav2-batch-runner 'cd ~/saisei_ws/gazebo_lab/nav2_lab && ./scripts/run_continuous_nav2_batches.sh'
+```
+
+Stop continuous batches:
+
+```bash
+touch ~/saisei_ws/gazebo_lab/nav2_lab/overseer/STOP_NAV2_BATCHES
+```
+
 ## Use Codex Inside This Lab
 
 Codex CLI can be installed locally inside this workspace without sudo:

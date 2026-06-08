@@ -15,3 +15,7 @@ Use the DGX resources aggressively. Prefer real repeated Nav2 experiments over o
 ## 2026-06-08T14:52:00+09:00
 
 The repeated-trial harness now exists and has passed one real Nav2 run. Use `scripts/run_repeated_trials.sh` and `config/repeated_trials.csv` as the primary execution path. Do not spend cycles trying to repair nonexistent scripts. Expand the matrix, run real batches, append results to `reports/RUN_LOG.md`, and compare `reports/benchmark_results.csv` against the baseline. If a utility is missing, first list `scripts/` and work only from files that actually exist.
+
+## 2026-06-08T15:35:00+09:00
+
+Human intervention ran a real 9-trial Nav2 batch successfully. Continue from the actual data in `reports/benchmark_results.csv`, not from old ledger assumptions. A dedicated continuous runner may be active via `scripts/run_continuous_nav2_batches.sh`; do not stop it unless explicitly instructed. Your job is to analyze results, expand `config/repeated_trials.csv`, and improve Nav2 experiments. Avoid further work on `append_cycle_entry.sh` unless a concrete failing test demonstrates that it is blocking real trials.
