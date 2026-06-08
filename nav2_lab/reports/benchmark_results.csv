@@ -9,3 +9,13 @@ timestamp,experiment_id,lane,world,params,start_pose,goal_pose,status,success,du
 2026-06-08T15:29:30+0900,tb3-short-north-r1,known_environment_optimization,tb3_sandbox,baseline,"-2.0,-1.0,0.0","-2.0,-0.5,0.0",success,true,49,logs/trials/tb3-short-north-r1_20260608-152930
 2026-06-08T15:30:33+0900,tb3-short-north-r2,known_environment_optimization,tb3_sandbox,baseline,"-2.0,-1.0,0.0","-2.0,-0.5,0.0",success,true,48,logs/trials/tb3-short-north-r2_20260608-153033
 2026-06-08T15:31:36+0900,tb3-short-north-r3,known_environment_optimization,tb3_sandbox,baseline,"-2.0,-1.0,0.0","-2.0,-0.5,0.0",success,true,27,logs/trials/tb3-short-north-r3_20260608-153136
+2026-06-08T15:34:13+0900,smoke-003-repeat-r1,known_environment_optimization,tb3_sandbox,baseline,"-2.0,-0.5,0.0","-1.0,-0.5,0.0",failed_goal_rc_0,false,1,logs/trials/smoke-003-repeat-r1_20260608-153413
+2026-06-08T15:34:37+0900,smoke-003-repeat-r2,known_environment_optimization,tb3_sandbox,baseline,"-2.0,-0.5,0.0","-1.0,-0.5,0.0",failed_goal_rc_0,false,0,logs/trials/smoke-003-repeat-r2_20260608-153437
+2026-06-08T15:34:55+0900,smoke-003-repeat-r3,known_environment_optimization,tb3_sandbox,baseline,"-2.0,-0.5,0.0","-1.0,-0.5,0.0",success,true,4,logs/trials/smoke-003-repeat-r3_20260608-153455
+2026-06-08T15:35:14+0900,tb3-short-east-r1,known_environment_optimization,tb3_sandbox,baseline,"-2.0,-0.5,0.0","-0.5,-0.5,0.0",success,true,5,logs/trials/tb3-short-east-r1_20260608-153515
+2026-06-08T15:36:55+0900,smoke-003-repeat-r1,known_environment_optimization,tb3_sandbox,baseline,"-2.0,-0.5,0.0","-1.0,-0.5,0.0",failed_goal_rc_0,false,2,logs/trials/smoke-003-repeat-r1_20260608-153655
+2026-06-08T15:46:53+0900,smoke-003-repeat-r1,known_environment_optimization,tb3_sandbox,baseline,"-2.0,-0.5,0.0","-1.0,-0.5,0.0",success,true,3,logs/trials/smoke-003-repeat-r1_20260608-154654
+2026-06-08T15:47:49+0900,smoke-003-repeat-r2,known_environment_optimization,tb3_sandbox,baseline,"-2.0,-0.5,0.0","-1.0,-0.5,0.0",failed_goal_rc_0,false,1,logs/trials/smoke-003-repeat-r2_20260608-154749
+2026-06-08T15:49:01+0900,smoke-003-repeat-r3,known_environment_optimization,tb3_sandbox,baseline,"-2.0,-0.5,0.0","-1.0,-0.5,0.0",failed_goal_rc_0,false,1,logs/trials/smoke-003-repeat-r3_20260608-154901
+2026-06-08T15:55:40+0900,smoke-003-repeat-r1,known_environment_optimization,tb3_sandbox,baseline,"-2.0,-0.5,0.0","-1.0,-0.5,0.0",failed_goal_rc_0,false,1,logs/trials/smoke-003-repeat-r1_20260608-155540
+2026-06-08T15:56:46+0900,smoke-003-repeat-r2,known_environment_optimization,tb3_sandbox,baseline,"-2.0,-0.5,0.0","-1.0,-0.5,0.0",success,true,4,logs/trials/smoke-003-repeat-r2_20260608-155646

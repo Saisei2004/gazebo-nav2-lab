@@ -9,6 +9,7 @@ results_csv="${RESULTS_CSV:-reports/benchmark_results.csv}"
 run_log="${RUN_LOG_FILE:-reports/RUN_LOG.md}"
 trial_runner="${TRIAL_RUNNER:-./scripts/run_nav2_trial.sh}"
 max_trials="${MAX_TRIALS:-0}"
+inter_trial_sleep_sec="${INTER_TRIAL_SLEEP_SEC:-45}"
 
 if [[ ! -f "$matrix" ]]; then
   echo "missing trial matrix: $matrix" >&2
@@ -110,6 +111,8 @@ PY
     if [[ "$rc" -ne 0 ]]; then
       failed=$((failed + 1))
     fi
+
+    sleep "$inter_trial_sleep_sec"
   done
 done < "$matrix"
 

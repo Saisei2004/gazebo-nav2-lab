@@ -38,6 +38,7 @@ chmod +x "$mock_runner"
 RESULTS_CSV="$tmp_dir/reports/benchmark_results.csv" \
 RUN_LOG_FILE="$tmp_dir/reports/RUN_LOG.md" \
 TRIAL_RUNNER="$mock_runner" \
+INTER_TRIAL_SLEEP_SEC=0 \
 NAV2_TRIAL_FAKE=1 \
 scripts/run_repeated_trials.sh "$matrix"
 

@@ -17,3 +17,9 @@ Next priority:
 2. Expand `config/repeated_trials.csv` with more start, goal, and yaw variants.
 3. Compare baseline route families, especially the slow north case.
 4. Only edit logging scripts when a failing test or broken data path proves it is necessary.
+
+## 2026-06-08T15:38:00+09:00
+
+Continuous execution exposed two `Goal was rejected` failures immediately after rapid relaunch. The trial runner now waits for key Nav2 lifecycle nodes to be active and adds an initial-pose settle delay before sending goals. The batch runner also waits between trials to reduce Gazebo/Nav2 relaunch noise.
+
+Follow-up correction: explicit lifecycle manager startup conflicted with Nav2 autostart and was removed. The stable policy is to preserve the proven goal-sending flow, reset the ROS 2 daemon during cleanup, and use a longer inter-trial delay.
