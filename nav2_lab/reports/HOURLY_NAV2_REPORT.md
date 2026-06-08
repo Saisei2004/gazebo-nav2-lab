@@ -1,8 +1,8 @@
 # Hourly Nav2 Report
 
-- generated_at: 2026-06-08T19:57:02+09:00
+- generated_at: 2026-06-08T19:58:08+09:00
 - total_trials: 127
-- latest_git: ab7cfcf hourly nav2 report 2026-06-08 19:07:01 +0900
+- latest_git: 9e330ac sync nav2 report before push
 
 ## Summary
 
@@ -47,8 +47,9 @@ zunda: 1 windows (created Fri Feb 27 16:13:06 2026)
 ```text
 376851 bash -c cd ~/saisei_ws/gazebo_lab/nav2_lab && INTER_TRIAL_SLEEP_SEC=90 SLEEP_SEC=60 ./scripts/run_continuous_nav2_batches.sh | tee -a overseer/nav2-batch-runner.log
 376852 bash ./scripts/run_continuous_nav2_batches.sh
-847049 bash ./scripts/run_repeated_trials.sh config/repeated_trials.csv
-892342 bash -lc pgrep -af "run_continuous_nav2_batches|run_repeated_trials|run_nav2_trial|ros2 launch|forge_agent|overseer_agent" || true
+895145 bash ./scripts/run_repeated_trials.sh config/repeated_trials.csv
+895158 bash ./scripts/run_nav2_trial.sh
+895251 bash -lc pgrep -af "run_continuous_nav2_batches|run_repeated_trials|run_nav2_trial|ros2 launch|forge_agent|overseer_agent" || true
 ```
 
 ## Notes
