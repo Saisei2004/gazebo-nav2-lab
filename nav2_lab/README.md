@@ -87,6 +87,30 @@ Stop continuous batches:
 touch ~/saisei_ws/gazebo_lab/nav2_lab/overseer/STOP_NAV2_BATCHES
 ```
 
+## Hourly GitHub Reports
+
+Install hourly report generation and Git commit/push:
+
+```bash
+cd ~/saisei_ws/gazebo_lab/nav2_lab
+./scripts/install_hourly_report_cron.sh
+```
+
+The cron runs at minute 7 every hour. It updates:
+
+- `reports/HOURLY_NAV2_REPORT.md`
+- `reports/benchmark_summary.csv`
+- `reports/benchmark_results.csv`
+- `reports/RUN_LOG.md`
+
+It commits locally every hour when files changed. It also pushes when `origin`
+is configured:
+
+```bash
+git remote add origin <github-repo-url>
+git push -u origin main
+```
+
 ## Use Codex Inside This Lab
 
 Codex CLI can be installed locally inside this workspace without sudo:
