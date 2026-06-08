@@ -3546,3 +3546,5 @@ Append-only. Do not rewrite old entries.
 - metrics: {"success":true,"duration_sec":"47","trial_dir":"logs/trials/tb3-short-north-r3_20260608-195430","runner_rc":0}
 - conclusion: Repeated Nav2 batch trial completed with status success.
 - next_action: Compare benchmark_results.csv against baseline and expand the trial matrix.
+---
+{"type":"continuous_batch","loop":12,"started_at":"2026-06-08T19:37:52+0900","finished_at":"2026-06-08T19:57:06+0900","rc":0}
