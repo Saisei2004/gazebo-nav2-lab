@@ -126,3 +126,8 @@ timestamp,experiment_id,lane,world,params,start_pose,goal_pose,status,success,du
 2026-06-08T19:49:15+0900,tb3-short-north-r1,known_environment_optimization,tb3_sandbox,baseline,"-2.0,-1.0,0.0","-2.0,-0.5,0.0",success,true,47,logs/trials/tb3-short-north-r1_20260608-194915
 2026-06-08T19:51:52+0900,tb3-short-north-r2,known_environment_optimization,tb3_sandbox,baseline,"-2.0,-1.0,0.0","-2.0,-0.5,0.0",success,true,49,logs/trials/tb3-short-north-r2_20260608-195152
 2026-06-08T19:54:29+0900,tb3-short-north-r3,known_environment_optimization,tb3_sandbox,baseline,"-2.0,-1.0,0.0","-2.0,-0.5,0.0",success,true,47,logs/trials/tb3-short-north-r3_20260608-195430
+2026-06-08T19:58:06+0900,smoke-003-repeat-r1,known_environment_optimization,tb3_sandbox,baseline,"-2.0,-0.5,0.0","-1.0,-0.5,0.0",success,true,4,logs/trials/smoke-003-repeat-r1_20260608-195806
+2026-06-08T19:59:59+0900,smoke-003-repeat-r2,known_environment_optimization,tb3_sandbox,baseline,"-2.0,-0.5,0.0","-1.0,-0.5,0.0",success,true,3,logs/trials/smoke-003-repeat-r2_20260608-195959
+2026-06-08T20:01:52+0900,smoke-003-repeat-r3,known_environment_optimization,tb3_sandbox,baseline,"-2.0,-0.5,0.0","-1.0,-0.5,0.0",failed_goal_rc_0,false,2,logs/trials/smoke-003-repeat-r3_20260608-200152
+2026-06-08T20:03:44+0900,tb3-short-east-r1,known_environment_optimization,tb3_sandbox,baseline,"-2.0,-0.5,0.0","-0.5,-0.5,0.0",success,true,5,logs/trials/tb3-short-east-r1_20260608-200344
+2026-06-08T20:05:38+0900,tb3-short-east-r2,known_environment_optimization,tb3_sandbox,baseline,"-2.0,-0.5,0.0","-0.5,-0.5,0.0",success,true,5,logs/trials/tb3-short-east-r2_20260608-200538
