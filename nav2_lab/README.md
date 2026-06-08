@@ -50,6 +50,31 @@ source ./env.sh
 ./scripts/list_experiments.py
 ```
 
+## Repeated Nav2 Trials
+
+The proven first real trial is `smoke-003` in the official TurtleBot3 sandbox:
+
+- start: `-2.0,-0.5,0.0`
+- goal: `-1.0,-0.5,0.0`
+
+Run a small repeated batch:
+
+```bash
+source ./env.sh
+./scripts/run_repeated_trials.sh
+```
+
+The default matrix is `config/repeated_trials.csv`. Results are appended to:
+
+- `reports/RUN_LOG.md`
+- `reports/benchmark_results.csv`
+
+For a quick non-Gazebo harness test:
+
+```bash
+./scripts/run_all_tests.sh
+```
+
 ## Use Codex Inside This Lab
 
 Codex CLI can be installed locally inside this workspace without sudo:

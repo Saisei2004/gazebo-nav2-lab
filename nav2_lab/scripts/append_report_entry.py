@@ -4,11 +4,12 @@
 from __future__ import annotations
 
 import argparse
+import os
 from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-RUN_LOG = ROOT / "reports" / "RUN_LOG.md"
+RUN_LOG = Path(os.environ.get("RUN_LOG_FILE", ROOT / "reports" / "RUN_LOG.md"))
 
 
 def main() -> int:

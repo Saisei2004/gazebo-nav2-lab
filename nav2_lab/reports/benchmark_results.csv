@@ -1,0 +1,2 @@
+timestamp,experiment_id,lane,world,params,start_pose,goal_pose,status,success,duration_sec,trial_dir
+2026-06-08T14:49:57+0900,smoke-003-repeat-r1,known_environment_optimization,tb3_sandbox,baseline,"-2.0,-0.5,0.0","-1.0,-0.5,0.0",success,true,3,logs/trials/smoke-003-repeat-r1_20260608-144957

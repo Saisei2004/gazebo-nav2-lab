@@ -1,0 +1,4 @@
+run_id,lane,world,start_x,start_y,start_yaw,goal_x,goal_y,goal_yaw,params,repeats
+smoke-003-repeat,known_environment_optimization,tb3_sandbox,-2.0,-0.5,0.0,-1.0,-0.5,0.0,baseline,3
+tb3-short-east,known_environment_optimization,tb3_sandbox,-2.0,-0.5,0.0,-0.5,-0.5,0.0,baseline,3
+tb3-short-north,known_environment_optimization,tb3_sandbox,-2.0,-1.0,0.0,-2.0,-0.5,0.0,baseline,3

@@ -79,3 +79,42 @@ Append-only. Do not rewrite old entries.
 - metrics: {"success":true,"duration_sec":3,"goal_return_code":0,"trial_dir":"logs/trials/smoke-003_20260604-174238"}
 - conclusion: Nav2 smoke trial succeeded: initial pose was accepted and NavigateToPose reached the goal.
 - next_action: Add repeated trial matrix execution and parse path/recovery metrics.
+
+## 2026-06-08T14:49:51+09:00 run=test-fake
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: 0.0,0.0,0.0
+- goal_pose: 1.0,0.0,0.0
+- status: fake_success
+- metrics: {"trial_dir":"logs/trials/test-fake_20260608-144951"}
+- conclusion: Fake Nav2 trial completed for harness validation.
+- next_action: Run without NAV2_TRIAL_FAKE after stack verification.
+
+## 2026-06-08T14:50:16+09:00 run=smoke-003-repeat-r1
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -1.0,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":3,"goal_return_code":0,"trial_dir":"logs/trials/smoke-003-repeat-r1_20260608-144957"}
+- conclusion: Nav2 trial completed with status success.
+- next_action: Parse path and recovery metrics from ROS topics/logs, then add repeated trial matrix execution.
+
+## 2026-06-08T14:50:19+09:00 run=smoke-003-repeat-r1
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -1.0,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":"3","trial_dir":"logs/trials/smoke-003-repeat-r1_20260608-144957","runner_rc":0}
+- conclusion: Repeated Nav2 batch trial completed with status success.
+- next_action: Compare benchmark_results.csv against baseline and expand the trial matrix.
