@@ -1,8 +1,8 @@
 # Hourly Nav2 Report
 
-- generated_at: 2026-06-08T16:31:03+09:00
-- total_trials: 35
-- latest_git: c667a44 stabilize nav2 repeated trial execution
+- generated_at: 2026-06-08T16:33:03+09:00
+- total_trials: 36
+- latest_git: 53c8db2 install hourly nav2 report cron
 
 ## Summary
 
@@ -10,18 +10,17 @@
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | smoke-003-repeat | 19 | 10 | 0.526 | 2.47 | 0.00 | 4.00 |
 | tb3-short-east | 10 | 10 | 1.000 | 5.60 | 5.00 | 6.00 |
-| tb3-short-north | 6 | 6 | 1.000 | 44.67 | 27.00 | 49.00 |
+| tb3-short-north | 7 | 7 | 1.000 | 45.14 | 27.00 | 49.00 |
 
 ## Status Counts
 
 - failed_goal_rc_0: 9
-- success: 26
+- success: 27
 
 ## Recent Trials
 
 | timestamp | experiment | status | success | duration_sec |
 | --- | --- | --- | --- | ---: |
-| 2026-06-08T16:04:20+0900 | tb3-short-east-r1 | success | true | 6 |
 | 2026-06-08T16:06:16+0900 | tb3-short-east-r2 | success | true | 5 |
 | 2026-06-08T16:08:10+0900 | tb3-short-east-r3 | success | true | 5 |
 | 2026-06-08T16:10:05+0900 | tb3-short-north-r1 | success | true | 48 |
@@ -33,6 +32,7 @@
 | 2026-06-08T16:24:34+0900 | tb3-short-east-r1 | success | true | 6 |
 | 2026-06-08T16:26:30+0900 | tb3-short-east-r2 | success | true | 5 |
 | 2026-06-08T16:28:25+0900 | tb3-short-east-r3 | success | true | 6 |
+| 2026-06-08T16:30:20+0900 | tb3-short-north-r1 | success | true | 48 |
 
 ## Runner State
 
@@ -48,9 +48,9 @@ zunda: 1 windows (created Fri Feb 27 16:13:06 2026)
 376851 bash -c cd ~/saisei_ws/gazebo_lab/nav2_lab && INTER_TRIAL_SLEEP_SEC=90 SLEEP_SEC=60 ./scripts/run_continuous_nav2_batches.sh | tee -a overseer/nav2-batch-runner.log
 376852 bash ./scripts/run_continuous_nav2_batches.sh
 422037 bash ./scripts/run_repeated_trials.sh config/repeated_trials.csv
-446343 bash ./scripts/run_nav2_trial.sh
-446525 /usr/bin/python3 /opt/ros/jazzy/bin/ros2 launch nav2_bringup tb3_simulation_launch.py headless:=True use_rviz:=False slam:=False map:=/opt/ros/jazzy/share/nav2_bringup/maps/tb3_sandbox.yaml world:=/opt/ros/jazzy/share/nav2_minimal_tb3_sim/worlds/tb3_sandbox.sdf.xacro x_pose:=-2.0 y_pose:=-1.0 on_exit_shutdown:=true
-448832 bash -lc pgrep -af "run_continuous_nav2_batches|run_repeated_trials|run_nav2_trial|ros2 launch|forge_agent|overseer_agent" || true
+453783 bash ./scripts/run_nav2_trial.sh
+453822 /usr/bin/python3 /opt/ros/jazzy/bin/ros2 launch nav2_bringup tb3_simulation_launch.py headless:=True use_rviz:=False slam:=False map:=/opt/ros/jazzy/share/nav2_bringup/maps/tb3_sandbox.yaml world:=/opt/ros/jazzy/share/nav2_minimal_tb3_sim/worlds/tb3_sandbox.sdf.xacro x_pose:=-2.0 y_pose:=-1.0 on_exit_shutdown:=true
+454386 bash -lc pgrep -af "run_continuous_nav2_batches|run_repeated_trials|run_nav2_trial|ros2 launch|forge_agent|overseer_agent" || true
 ```
 
 ## Notes

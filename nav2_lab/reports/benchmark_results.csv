@@ -34,3 +34,4 @@ timestamp,experiment_id,lane,world,params,start_pose,goal_pose,status,success,du
 2026-06-08T16:24:34+0900,tb3-short-east-r1,known_environment_optimization,tb3_sandbox,baseline,"-2.0,-0.5,0.0","-0.5,-0.5,0.0",success,true,6,logs/trials/tb3-short-east-r1_20260608-162434
 2026-06-08T16:26:30+0900,tb3-short-east-r2,known_environment_optimization,tb3_sandbox,baseline,"-2.0,-0.5,0.0","-0.5,-0.5,0.0",success,true,5,logs/trials/tb3-short-east-r2_20260608-162630
 2026-06-08T16:28:25+0900,tb3-short-east-r3,known_environment_optimization,tb3_sandbox,baseline,"-2.0,-0.5,0.0","-0.5,-0.5,0.0",success,true,6,logs/trials/tb3-short-east-r3_20260608-162825
+2026-06-08T16:30:20+0900,tb3-short-north-r1,known_environment_optimization,tb3_sandbox,baseline,"-2.0,-1.0,0.0","-2.0,-0.5,0.0",success,true,48,logs/trials/tb3-short-north-r1_20260608-163021
