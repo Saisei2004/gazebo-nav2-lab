@@ -1,38 +1,38 @@
 # Hourly Nav2 Report
 
-- generated_at: 2026-06-09T16:07:01+09:00
-- total_trials: 674
-- latest_git: c8ceecb hourly nav2 report 2026-06-09 15:07:01 +0900
+- generated_at: 2026-06-09T17:07:02+09:00
+- total_trials: 701
+- latest_git: 19c8b31 hourly nav2 report 2026-06-09 16:07:01 +0900
 
 ## Summary
 
 | experiment | trials | success | success_rate | avg_sec | min_sec | max_sec |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| smoke-003-repeat | 231 | 192 | 0.831 | 3.41 | 0.00 | 5.00 |
-| tb3-short-east | 223 | 190 | 0.852 | 4.82 | 1.00 | 7.00 |
-| tb3-short-north | 220 | 198 | 0.900 | 41.70 | 1.00 | 50.00 |
+| smoke-003-repeat | 240 | 199 | 0.829 | 3.40 | 0.00 | 5.00 |
+| tb3-short-east | 232 | 197 | 0.849 | 4.81 | 1.00 | 7.00 |
+| tb3-short-north | 229 | 205 | 0.895 | 41.56 | 1.00 | 50.00 |
 
 ## Status Counts
 
-- failed_goal_rc_0: 94
-- success: 580
+- failed_goal_rc_0: 100
+- success: 601
 
 ## Recent Trials
 
 | timestamp | experiment | status | success | duration_sec |
 | --- | --- | --- | --- | ---: |
-| 2026-06-09T15:41:16+0900 | tb3-short-east-r2 | failed_goal_rc_0 | false | 1 |
-| 2026-06-09T15:43:07+0900 | tb3-short-east-r3 | success | true | 5 |
-| 2026-06-09T15:45:01+0900 | tb3-short-north-r1 | success | true | 28 |
-| 2026-06-09T15:47:18+0900 | tb3-short-north-r2 | failed_goal_rc_0 | false | 2 |
-| 2026-06-09T15:49:10+0900 | tb3-short-north-r3 | success | true | 49 |
-| 2026-06-09T15:52:48+0900 | smoke-003-repeat-r1 | success | true | 4 |
-| 2026-06-09T15:54:42+0900 | smoke-003-repeat-r2 | success | true | 4 |
-| 2026-06-09T15:56:34+0900 | smoke-003-repeat-r3 | success | true | 5 |
-| 2026-06-09T15:58:28+0900 | tb3-short-east-r1 | success | true | 6 |
-| 2026-06-09T16:00:22+0900 | tb3-short-east-r2 | success | true | 5 |
-| 2026-06-09T16:02:17+0900 | tb3-short-east-r3 | success | true | 5 |
-| 2026-06-09T16:04:11+0900 | tb3-short-north-r1 | success | true | 47 |
+| 2026-06-09T16:39:10+0900 | tb3-short-east-r2 | success | true | 4 |
+| 2026-06-09T16:41:04+0900 | tb3-short-east-r3 | failed_goal_rc_0 | false | 1 |
+| 2026-06-09T16:42:54+0900 | tb3-short-north-r1 | success | true | 48 |
+| 2026-06-09T16:45:31+0900 | tb3-short-north-r2 | success | true | 48 |
+| 2026-06-09T16:48:09+0900 | tb3-short-north-r3 | success | true | 49 |
+| 2026-06-09T16:51:48+0900 | smoke-003-repeat-r1 | success | true | 5 |
+| 2026-06-09T16:53:43+0900 | smoke-003-repeat-r2 | success | true | 3 |
+| 2026-06-09T16:55:36+0900 | smoke-003-repeat-r3 | success | true | 4 |
+| 2026-06-09T16:57:31+0900 | tb3-short-east-r1 | success | true | 6 |
+| 2026-06-09T16:59:26+0900 | tb3-short-east-r2 | success | true | 5 |
+| 2026-06-09T17:01:21+0900 | tb3-short-east-r3 | success | true | 6 |
+| 2026-06-09T17:03:16+0900 | tb3-short-north-r1 | success | true | 49 |
 
 ## Runner State
 
@@ -47,10 +47,9 @@ zunda: 1 windows (created Fri Feb 27 16:13:06 2026)
 ```text
 376851 bash -c cd ~/saisei_ws/gazebo_lab/nav2_lab && INTER_TRIAL_SLEEP_SEC=90 SLEEP_SEC=60 ./scripts/run_continuous_nav2_batches.sh | tee -a overseer/nav2-batch-runner.log
 376852 bash ./scripts/run_continuous_nav2_batches.sh
-3504041 bash ./scripts/run_repeated_trials.sh config/repeated_trials.csv
-3534647 bash ./scripts/run_nav2_trial.sh
-3534688 /usr/bin/python3 /opt/ros/jazzy/bin/ros2 launch nav2_bringup tb3_simulation_launch.py headless:=True use_rviz:=False slam:=False map:=/opt/ros/jazzy/share/nav2_bringup/maps/tb3_sandbox.yaml world:=/opt/ros/jazzy/share/nav2_minimal_tb3_sim/worlds/tb3_sandbox.sdf.xacro x_pose:=-2.0 y_pose:=-1.0 on_exit_shutdown:=true
-3535302 bash -lc pgrep -af "run_continuous_nav2_batches|run_repeated_trials|run_nav2_trial|ros2 launch|forge_agent|overseer_agent" || true
+3631840 bash ./scripts/run_repeated_trials.sh config/repeated_trials.csv
+3662919 bash ./scripts/run_nav2_trial.sh
+3665806 bash -lc pgrep -af "run_continuous_nav2_batches|run_repeated_trials|run_nav2_trial|ros2 launch|forge_agent|overseer_agent" || true
 ```
 
 ## Notes
