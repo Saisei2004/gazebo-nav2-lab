@@ -22,3 +22,26 @@ Human intervention ran a real 9-trial Nav2 batch successfully. Continue from the
 
 ## 2026-06-08T15:58:39+09:00
 Real Nav2 batches are now running. Prioritize analysis of benchmark_results.csv. The main current issue is intermittent Goal was rejected / bt_navigator inactive on repeated relaunch. Do not edit logging utilities unless tests fail. Focus on experiment stability, cleanup timing, lifecycle readiness, and expanding real Nav2 trials.
+
+## 2026-06-10T15:30:00+09:00
+
+Do not terminate the running Nav2 agent or the continuous runner.
+
+Human follow-up:
+The current baseline-only repeated trial phase has collected enough data. More than 1300 total trials have been run across only three baseline experiments, so continuing the same three-row baseline matrix is no longer useful.
+
+Keep the agent alive, but change strategy immediately.
+
+Required next actions:
+1. Do not add STOP_NAV2_BATCHES.
+2. Do not kill the nav2-batch-runner tmux session.
+3. Analyze reports/benchmark_results.csv and reports/benchmark_summary.csv.
+4. Classify failed_goal_rc_0 failures from existing trial logs.
+5. Investigate why tb3-short-north is consistently slow.
+6. Expand config/repeated_trials.csv beyond the current three baseline rows.
+7. Add yaw variants, start/goal variants, and at least one Nav2 parameter sweep.
+8. After expanding the matrix, continue running real Nav2 batches using the expanded matrix.
+9. Do not keep collecting the same baseline-only data unless it is explicitly needed as a control for a new comparison.
+
+The goal is not to stop execution. The goal is to move from baseline validation to analysis and systematic improvement.
+
