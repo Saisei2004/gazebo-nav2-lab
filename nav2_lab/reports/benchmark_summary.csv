@@ -1,4 +1,4 @@
 experiment_id,trials,successes,success_rate,avg_duration_sec,min_duration_sec,max_duration_sec
-smoke-003-repeat,567,486,0.857,3.52,0.00,6.00
-tb3-short-east,559,484,0.866,4.88,1.00,8.00
-tb3-short-north,558,479,0.858,39.99,1.00,51.00
+smoke-003-repeat,576,495,0.859,3.52,0.00,6.00
+tb3-short-east,568,491,0.864,4.88,1.00,8.00
+tb3-short-north,567,487,0.859,40.04,1.00,51.00

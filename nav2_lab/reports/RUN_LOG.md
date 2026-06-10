@@ -44376,3 +44376,711 @@ Append-only. Do not rewrite old entries.
 - next_action: Compare benchmark_results.csv against baseline and expand the trial matrix.
 ---
 {"type":"continuous_batch","loop":185,"started_at":"2026-06-11T04:47:34+0900","finished_at":"2026-06-11T05:06:46+0900","rc":0}
+
+## 2026-06-11T05:08:07+09:00 run=smoke-003-repeat-r1
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -1.0,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":4,"goal_return_code":0,"trial_dir":"logs/trials/smoke-003-repeat-r1_20260611-050746"}
+- conclusion: Nav2 trial completed with status success.
+- next_action: Parse path and recovery metrics from ROS topics/logs, then add repeated trial matrix execution.
+
+## 2026-06-11T05:08:10+09:00 run=smoke-003-repeat-r1
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -1.0,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":"4","trial_dir":"logs/trials/smoke-003-repeat-r1_20260611-050746","runner_rc":0}
+- conclusion: Repeated Nav2 batch trial completed with status success.
+- next_action: Compare benchmark_results.csv against baseline and expand the trial matrix.
+
+## 2026-06-11T05:10:00+09:00 run=smoke-003-repeat-r2
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -1.0,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":4,"goal_return_code":0,"trial_dir":"logs/trials/smoke-003-repeat-r2_20260611-050940"}
+- conclusion: Nav2 trial completed with status success.
+- next_action: Parse path and recovery metrics from ROS topics/logs, then add repeated trial matrix execution.
+
+## 2026-06-11T05:10:02+09:00 run=smoke-003-repeat-r2
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -1.0,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":"4","trial_dir":"logs/trials/smoke-003-repeat-r2_20260611-050940","runner_rc":0}
+- conclusion: Repeated Nav2 batch trial completed with status success.
+- next_action: Compare benchmark_results.csv against baseline and expand the trial matrix.
+
+## 2026-06-11T05:11:52+09:00 run=smoke-003-repeat-r3
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -1.0,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":3,"goal_return_code":0,"trial_dir":"logs/trials/smoke-003-repeat-r3_20260611-051132"}
+- conclusion: Nav2 trial completed with status success.
+- next_action: Parse path and recovery metrics from ROS topics/logs, then add repeated trial matrix execution.
+
+## 2026-06-11T05:11:55+09:00 run=smoke-003-repeat-r3
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -1.0,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":"3","trial_dir":"logs/trials/smoke-003-repeat-r3_20260611-051132","runner_rc":0}
+- conclusion: Repeated Nav2 batch trial completed with status success.
+- next_action: Compare benchmark_results.csv against baseline and expand the trial matrix.
+
+## 2026-06-11T05:13:45+09:00 run=tb3-short-east-r1
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -0.5,-0.5,0.0
+- status: failed_goal_rc_0
+- metrics: {"success":false,"duration_sec":1,"goal_return_code":0,"trial_dir":"logs/trials/tb3-short-east-r1_20260611-051325"}
+- conclusion: Nav2 trial completed with status failed_goal_rc_0.
+- next_action: Parse path and recovery metrics from ROS topics/logs, then add repeated trial matrix execution.
+
+## 2026-06-11T05:13:48+09:00 run=tb3-short-east-r1
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -0.5,-0.5,0.0
+- status: failed_goal_rc_0
+- metrics: {"success":false,"duration_sec":"1","trial_dir":"logs/trials/tb3-short-east-r1_20260611-051325","runner_rc":4}
+- conclusion: Repeated Nav2 batch trial completed with status failed_goal_rc_0.
+- next_action: Compare benchmark_results.csv against baseline and expand the trial matrix.
+
+## 2026-06-11T05:15:42+09:00 run=tb3-short-east-r2
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -0.5,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":6,"goal_return_code":0,"trial_dir":"logs/trials/tb3-short-east-r2_20260611-051518"}
+- conclusion: Nav2 trial completed with status success.
+- next_action: Parse path and recovery metrics from ROS topics/logs, then add repeated trial matrix execution.
+
+## 2026-06-11T05:15:45+09:00 run=tb3-short-east-r2
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -0.5,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":"6","trial_dir":"logs/trials/tb3-short-east-r2_20260611-051518","runner_rc":0}
+- conclusion: Repeated Nav2 batch trial completed with status success.
+- next_action: Compare benchmark_results.csv against baseline and expand the trial matrix.
+
+## 2026-06-11T05:17:37+09:00 run=tb3-short-east-r3
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -0.5,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":5,"goal_return_code":0,"trial_dir":"logs/trials/tb3-short-east-r3_20260611-051715"}
+- conclusion: Nav2 trial completed with status success.
+- next_action: Parse path and recovery metrics from ROS topics/logs, then add repeated trial matrix execution.
+
+## 2026-06-11T05:17:39+09:00 run=tb3-short-east-r3
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -0.5,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":"5","trial_dir":"logs/trials/tb3-short-east-r3_20260611-051715","runner_rc":0}
+- conclusion: Repeated Nav2 batch trial completed with status success.
+- next_action: Compare benchmark_results.csv against baseline and expand the trial matrix.
+
+## 2026-06-11T05:20:14+09:00 run=tb3-short-north-r1
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-1.0,0.0
+- goal_pose: -2.0,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":48,"goal_return_code":0,"trial_dir":"logs/trials/tb3-short-north-r1_20260611-051909"}
+- conclusion: Nav2 trial completed with status success.
+- next_action: Parse path and recovery metrics from ROS topics/logs, then add repeated trial matrix execution.
+
+## 2026-06-11T05:20:17+09:00 run=tb3-short-north-r1
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-1.0,0.0
+- goal_pose: -2.0,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":"48","trial_dir":"logs/trials/tb3-short-north-r1_20260611-051909","runner_rc":0}
+- conclusion: Repeated Nav2 batch trial completed with status success.
+- next_action: Compare benchmark_results.csv against baseline and expand the trial matrix.
+
+## 2026-06-11T05:22:54+09:00 run=tb3-short-north-r2
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-1.0,0.0
+- goal_pose: -2.0,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":49,"goal_return_code":0,"trial_dir":"logs/trials/tb3-short-north-r2_20260611-052147"}
+- conclusion: Nav2 trial completed with status success.
+- next_action: Parse path and recovery metrics from ROS topics/logs, then add repeated trial matrix execution.
+
+## 2026-06-11T05:22:57+09:00 run=tb3-short-north-r2
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-1.0,0.0
+- goal_pose: -2.0,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":"49","trial_dir":"logs/trials/tb3-short-north-r2_20260611-052147","runner_rc":0}
+- conclusion: Repeated Nav2 batch trial completed with status success.
+- next_action: Compare benchmark_results.csv against baseline and expand the trial matrix.
+
+## 2026-06-11T05:25:32+09:00 run=tb3-short-north-r3
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-1.0,0.0
+- goal_pose: -2.0,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":48,"goal_return_code":0,"trial_dir":"logs/trials/tb3-short-north-r3_20260611-052427"}
+- conclusion: Nav2 trial completed with status success.
+- next_action: Parse path and recovery metrics from ROS topics/logs, then add repeated trial matrix execution.
+
+## 2026-06-11T05:25:35+09:00 run=tb3-short-north-r3
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-1.0,0.0
+- goal_pose: -2.0,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":"48","trial_dir":"logs/trials/tb3-short-north-r3_20260611-052427","runner_rc":0}
+- conclusion: Repeated Nav2 batch trial completed with status success.
+- next_action: Compare benchmark_results.csv against baseline and expand the trial matrix.
+---
+{"type":"continuous_batch","loop":186,"started_at":"2026-06-11T05:07:46+0900","finished_at":"2026-06-11T05:27:05+0900","rc":0}
+
+## 2026-06-11T05:28:26+09:00 run=smoke-003-repeat-r1
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -1.0,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":4,"goal_return_code":0,"trial_dir":"logs/trials/smoke-003-repeat-r1_20260611-052805"}
+- conclusion: Nav2 trial completed with status success.
+- next_action: Parse path and recovery metrics from ROS topics/logs, then add repeated trial matrix execution.
+
+## 2026-06-11T05:28:29+09:00 run=smoke-003-repeat-r1
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -1.0,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":"4","trial_dir":"logs/trials/smoke-003-repeat-r1_20260611-052805","runner_rc":0}
+- conclusion: Repeated Nav2 batch trial completed with status success.
+- next_action: Compare benchmark_results.csv against baseline and expand the trial matrix.
+
+## 2026-06-11T05:30:18+09:00 run=smoke-003-repeat-r2
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -1.0,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":3,"goal_return_code":0,"trial_dir":"logs/trials/smoke-003-repeat-r2_20260611-052959"}
+- conclusion: Nav2 trial completed with status success.
+- next_action: Parse path and recovery metrics from ROS topics/logs, then add repeated trial matrix execution.
+
+## 2026-06-11T05:30:21+09:00 run=smoke-003-repeat-r2
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -1.0,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":"3","trial_dir":"logs/trials/smoke-003-repeat-r2_20260611-052959","runner_rc":0}
+- conclusion: Repeated Nav2 batch trial completed with status success.
+- next_action: Compare benchmark_results.csv against baseline and expand the trial matrix.
+
+## 2026-06-11T05:32:12+09:00 run=smoke-003-repeat-r3
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -1.0,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":4,"goal_return_code":0,"trial_dir":"logs/trials/smoke-003-repeat-r3_20260611-053151"}
+- conclusion: Nav2 trial completed with status success.
+- next_action: Parse path and recovery metrics from ROS topics/logs, then add repeated trial matrix execution.
+
+## 2026-06-11T05:32:14+09:00 run=smoke-003-repeat-r3
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -1.0,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":"4","trial_dir":"logs/trials/smoke-003-repeat-r3_20260611-053151","runner_rc":0}
+- conclusion: Repeated Nav2 batch trial completed with status success.
+- next_action: Compare benchmark_results.csv against baseline and expand the trial matrix.
+
+## 2026-06-11T05:34:07+09:00 run=tb3-short-east-r1
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -0.5,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":7,"goal_return_code":0,"trial_dir":"logs/trials/tb3-short-east-r1_20260611-053345"}
+- conclusion: Nav2 trial completed with status success.
+- next_action: Parse path and recovery metrics from ROS topics/logs, then add repeated trial matrix execution.
+
+## 2026-06-11T05:34:09+09:00 run=tb3-short-east-r1
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -0.5,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":"7","trial_dir":"logs/trials/tb3-short-east-r1_20260611-053345","runner_rc":0}
+- conclusion: Repeated Nav2 batch trial completed with status success.
+- next_action: Compare benchmark_results.csv against baseline and expand the trial matrix.
+
+## 2026-06-11T05:35:57+09:00 run=tb3-short-east-r2
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -0.5,-0.5,0.0
+- status: failed_goal_rc_0
+- metrics: {"success":false,"duration_sec":1,"goal_return_code":0,"trial_dir":"logs/trials/tb3-short-east-r2_20260611-053539"}
+- conclusion: Nav2 trial completed with status failed_goal_rc_0.
+- next_action: Parse path and recovery metrics from ROS topics/logs, then add repeated trial matrix execution.
+
+## 2026-06-11T05:35:59+09:00 run=tb3-short-east-r2
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -0.5,-0.5,0.0
+- status: failed_goal_rc_0
+- metrics: {"success":false,"duration_sec":"1","trial_dir":"logs/trials/tb3-short-east-r2_20260611-053539","runner_rc":4}
+- conclusion: Repeated Nav2 batch trial completed with status failed_goal_rc_0.
+- next_action: Compare benchmark_results.csv against baseline and expand the trial matrix.
+
+## 2026-06-11T05:37:51+09:00 run=tb3-short-east-r3
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -0.5,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":5,"goal_return_code":0,"trial_dir":"logs/trials/tb3-short-east-r3_20260611-053729"}
+- conclusion: Nav2 trial completed with status success.
+- next_action: Parse path and recovery metrics from ROS topics/logs, then add repeated trial matrix execution.
+
+## 2026-06-11T05:37:53+09:00 run=tb3-short-east-r3
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -0.5,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":"5","trial_dir":"logs/trials/tb3-short-east-r3_20260611-053729","runner_rc":0}
+- conclusion: Repeated Nav2 batch trial completed with status success.
+- next_action: Compare benchmark_results.csv against baseline and expand the trial matrix.
+
+## 2026-06-11T05:40:29+09:00 run=tb3-short-north-r1
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-1.0,0.0
+- goal_pose: -2.0,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":49,"goal_return_code":0,"trial_dir":"logs/trials/tb3-short-north-r1_20260611-053923"}
+- conclusion: Nav2 trial completed with status success.
+- next_action: Parse path and recovery metrics from ROS topics/logs, then add repeated trial matrix execution.
+
+## 2026-06-11T05:40:32+09:00 run=tb3-short-north-r1
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-1.0,0.0
+- goal_pose: -2.0,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":"49","trial_dir":"logs/trials/tb3-short-north-r1_20260611-053923","runner_rc":0}
+- conclusion: Repeated Nav2 batch trial completed with status success.
+- next_action: Compare benchmark_results.csv against baseline and expand the trial matrix.
+
+## 2026-06-11T05:42:19+09:00 run=tb3-short-north-r2
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-1.0,0.0
+- goal_pose: -2.0,-0.5,0.0
+- status: failed_goal_rc_0
+- metrics: {"success":false,"duration_sec":1,"goal_return_code":0,"trial_dir":"logs/trials/tb3-short-north-r2_20260611-054202"}
+- conclusion: Nav2 trial completed with status failed_goal_rc_0.
+- next_action: Parse path and recovery metrics from ROS topics/logs, then add repeated trial matrix execution.
+
+## 2026-06-11T05:42:22+09:00 run=tb3-short-north-r2
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-1.0,0.0
+- goal_pose: -2.0,-0.5,0.0
+- status: failed_goal_rc_0
+- metrics: {"success":false,"duration_sec":"1","trial_dir":"logs/trials/tb3-short-north-r2_20260611-054202","runner_rc":4}
+- conclusion: Repeated Nav2 batch trial completed with status failed_goal_rc_0.
+- next_action: Compare benchmark_results.csv against baseline and expand the trial matrix.
+
+## 2026-06-11T05:44:56+09:00 run=tb3-short-north-r3
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-1.0,0.0
+- goal_pose: -2.0,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":48,"goal_return_code":0,"trial_dir":"logs/trials/tb3-short-north-r3_20260611-054352"}
+- conclusion: Nav2 trial completed with status success.
+- next_action: Parse path and recovery metrics from ROS topics/logs, then add repeated trial matrix execution.
+
+## 2026-06-11T05:44:59+09:00 run=tb3-short-north-r3
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-1.0,0.0
+- goal_pose: -2.0,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":"48","trial_dir":"logs/trials/tb3-short-north-r3_20260611-054352","runner_rc":0}
+- conclusion: Repeated Nav2 batch trial completed with status success.
+- next_action: Compare benchmark_results.csv against baseline and expand the trial matrix.
+---
+{"type":"continuous_batch","loop":187,"started_at":"2026-06-11T05:28:05+0900","finished_at":"2026-06-11T05:46:29+0900","rc":0}
+
+## 2026-06-11T05:47:50+09:00 run=smoke-003-repeat-r1
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -1.0,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":4,"goal_return_code":0,"trial_dir":"logs/trials/smoke-003-repeat-r1_20260611-054729"}
+- conclusion: Nav2 trial completed with status success.
+- next_action: Parse path and recovery metrics from ROS topics/logs, then add repeated trial matrix execution.
+
+## 2026-06-11T05:47:52+09:00 run=smoke-003-repeat-r1
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -1.0,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":"4","trial_dir":"logs/trials/smoke-003-repeat-r1_20260611-054729","runner_rc":0}
+- conclusion: Repeated Nav2 batch trial completed with status success.
+- next_action: Compare benchmark_results.csv against baseline and expand the trial matrix.
+
+## 2026-06-11T05:49:43+09:00 run=smoke-003-repeat-r2
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -1.0,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":4,"goal_return_code":0,"trial_dir":"logs/trials/smoke-003-repeat-r2_20260611-054923"}
+- conclusion: Nav2 trial completed with status success.
+- next_action: Parse path and recovery metrics from ROS topics/logs, then add repeated trial matrix execution.
+
+## 2026-06-11T05:49:45+09:00 run=smoke-003-repeat-r2
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -1.0,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":"4","trial_dir":"logs/trials/smoke-003-repeat-r2_20260611-054923","runner_rc":0}
+- conclusion: Repeated Nav2 batch trial completed with status success.
+- next_action: Compare benchmark_results.csv against baseline and expand the trial matrix.
+
+## 2026-06-11T05:51:36+09:00 run=smoke-003-repeat-r3
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -1.0,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":5,"goal_return_code":0,"trial_dir":"logs/trials/smoke-003-repeat-r3_20260611-055116"}
+- conclusion: Nav2 trial completed with status success.
+- next_action: Parse path and recovery metrics from ROS topics/logs, then add repeated trial matrix execution.
+
+## 2026-06-11T05:51:38+09:00 run=smoke-003-repeat-r3
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -1.0,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":"5","trial_dir":"logs/trials/smoke-003-repeat-r3_20260611-055116","runner_rc":0}
+- conclusion: Repeated Nav2 batch trial completed with status success.
+- next_action: Compare benchmark_results.csv against baseline and expand the trial matrix.
+
+## 2026-06-11T05:53:31+09:00 run=tb3-short-east-r1
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -0.5,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":6,"goal_return_code":0,"trial_dir":"logs/trials/tb3-short-east-r1_20260611-055308"}
+- conclusion: Nav2 trial completed with status success.
+- next_action: Parse path and recovery metrics from ROS topics/logs, then add repeated trial matrix execution.
+
+## 2026-06-11T05:53:34+09:00 run=tb3-short-east-r1
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -0.5,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":"6","trial_dir":"logs/trials/tb3-short-east-r1_20260611-055308","runner_rc":0}
+- conclusion: Repeated Nav2 batch trial completed with status success.
+- next_action: Compare benchmark_results.csv against baseline and expand the trial matrix.
+
+## 2026-06-11T05:55:26+09:00 run=tb3-short-east-r2
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -0.5,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":5,"goal_return_code":0,"trial_dir":"logs/trials/tb3-short-east-r2_20260611-055504"}
+- conclusion: Nav2 trial completed with status success.
+- next_action: Parse path and recovery metrics from ROS topics/logs, then add repeated trial matrix execution.
+
+## 2026-06-11T05:55:29+09:00 run=tb3-short-east-r2
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -0.5,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":"5","trial_dir":"logs/trials/tb3-short-east-r2_20260611-055504","runner_rc":0}
+- conclusion: Repeated Nav2 batch trial completed with status success.
+- next_action: Compare benchmark_results.csv against baseline and expand the trial matrix.
+
+## 2026-06-11T05:57:20+09:00 run=tb3-short-east-r3
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -0.5,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":5,"goal_return_code":0,"trial_dir":"logs/trials/tb3-short-east-r3_20260611-055659"}
+- conclusion: Nav2 trial completed with status success.
+- next_action: Parse path and recovery metrics from ROS topics/logs, then add repeated trial matrix execution.
+
+## 2026-06-11T05:57:23+09:00 run=tb3-short-east-r3
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-0.5,0.0
+- goal_pose: -0.5,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":"5","trial_dir":"logs/trials/tb3-short-east-r3_20260611-055659","runner_rc":0}
+- conclusion: Repeated Nav2 batch trial completed with status success.
+- next_action: Compare benchmark_results.csv against baseline and expand the trial matrix.
+
+## 2026-06-11T05:59:58+09:00 run=tb3-short-north-r1
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-1.0,0.0
+- goal_pose: -2.0,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":49,"goal_return_code":0,"trial_dir":"logs/trials/tb3-short-north-r1_20260611-055853"}
+- conclusion: Nav2 trial completed with status success.
+- next_action: Parse path and recovery metrics from ROS topics/logs, then add repeated trial matrix execution.
+
+## 2026-06-11T06:00:00+09:00 run=tb3-short-north-r1
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-1.0,0.0
+- goal_pose: -2.0,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":"49","trial_dir":"logs/trials/tb3-short-north-r1_20260611-055853","runner_rc":0}
+- conclusion: Repeated Nav2 batch trial completed with status success.
+- next_action: Compare benchmark_results.csv against baseline and expand the trial matrix.
+
+## 2026-06-11T06:02:35+09:00 run=tb3-short-north-r2
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-1.0,0.0
+- goal_pose: -2.0,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":48,"goal_return_code":0,"trial_dir":"logs/trials/tb3-short-north-r2_20260611-060130"}
+- conclusion: Nav2 trial completed with status success.
+- next_action: Parse path and recovery metrics from ROS topics/logs, then add repeated trial matrix execution.
+
+## 2026-06-11T06:02:38+09:00 run=tb3-short-north-r2
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-1.0,0.0
+- goal_pose: -2.0,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":"48","trial_dir":"logs/trials/tb3-short-north-r2_20260611-060130","runner_rc":0}
+- conclusion: Repeated Nav2 batch trial completed with status success.
+- next_action: Compare benchmark_results.csv against baseline and expand the trial matrix.
+
+## 2026-06-11T06:05:13+09:00 run=tb3-short-north-r3
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-1.0,0.0
+- goal_pose: -2.0,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":48,"goal_return_code":0,"trial_dir":"logs/trials/tb3-short-north-r3_20260611-060408"}
+- conclusion: Nav2 trial completed with status success.
+- next_action: Parse path and recovery metrics from ROS topics/logs, then add repeated trial matrix execution.
+
+## 2026-06-11T06:05:15+09:00 run=tb3-short-north-r3
+
+- lane: known_environment_optimization
+- environment_id: tb3_sandbox
+- parameter_set_id: baseline
+- robot_model: turtlebot3_waffle
+- start_pose: -2.0,-1.0,0.0
+- goal_pose: -2.0,-0.5,0.0
+- status: success
+- metrics: {"success":true,"duration_sec":"48","trial_dir":"logs/trials/tb3-short-north-r3_20260611-060408","runner_rc":0}
+- conclusion: Repeated Nav2 batch trial completed with status success.
+- next_action: Compare benchmark_results.csv against baseline and expand the trial matrix.
+---
+{"type":"continuous_batch","loop":188,"started_at":"2026-06-11T05:47:29+0900","finished_at":"2026-06-11T06:06:45+0900","rc":0}
