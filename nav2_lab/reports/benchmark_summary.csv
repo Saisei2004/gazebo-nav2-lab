@@ -1,4 +1,12 @@
 experiment_id,trials,successes,success_rate,avg_duration_sec,min_duration_sec,max_duration_sec
-smoke-003-repeat,649,553,0.852,3.52,0.00,6.00
-tb3-short-east,640,550,0.859,4.85,1.00,8.00
-tb3-short-north,639,549,0.859,40.21,1.00,51.00
+0,1,0,0.000,1.00,1.00,1.00
+baseline-north-control,1,1,1.000,49.00,49.00,49.00
+fast-east,2,2,1.000,5.50,5.00,6.00
+fast-north,2,2,1.000,48.00,48.00,48.00
+relaxed-north,2,2,1.000,47.50,47.00,48.00
+relaxed-smoke,2,2,1.000,3.50,3.00,4.00
+smoke-003-repeat,654,556,0.850,3.51,0.00,6.00
+stability-smoke,2,0,0.000,,,
+tb3-short-east,646,554,0.858,4.84,1.00,8.00
+tb3-short-north,642,552,0.860,40.25,1.00,51.00
+yaw-east-pos,1,1,1.000,13.00,13.00,13.00
