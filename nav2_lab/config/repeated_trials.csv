@@ -1,4 +1,12 @@
 run_id,lane,world,start_x,start_y,start_yaw,goal_x,goal_y,goal_yaw,params,repeats
-smoke-003-repeat,known_environment_optimization,tb3_sandbox,-2.0,-0.5,0.0,-1.0,-0.5,0.0,baseline,3
-tb3-short-east,known_environment_optimization,tb3_sandbox,-2.0,-0.5,0.0,-0.5,-0.5,0.0,baseline,3
-tb3-short-north,known_environment_optimization,tb3_sandbox,-2.0,-1.0,0.0,-2.0,-0.5,0.0,baseline,3
+baseline-smoke-control,known_environment_optimization,tb3_sandbox,-2.0,-0.5,0.0,-1.0,-0.5,0.0,baseline,1
+baseline-east-control,known_environment_optimization,tb3_sandbox,-2.0,-0.5,0.0,-0.5,-0.5,0.0,baseline,1
+baseline-north-control,known_environment_optimization,tb3_sandbox,-2.0,-1.0,0.0,-2.0,-0.5,0.0,baseline,1
+fast-east,known_environment_optimization,tb3_sandbox,-2.0,-0.5,0.0,-0.5,-0.5,0.0,fast_controller,2
+fast-north,known_environment_optimization,tb3_sandbox,-2.0,-1.0,0.0,-2.0,-0.5,0.0,fast_controller,2
+relaxed-smoke,known_environment_optimization,tb3_sandbox,-2.0,-0.5,0.0,-1.0,-0.5,0.0,goal_tolerance_relaxed,2
+relaxed-north,known_environment_optimization,tb3_sandbox,-2.0,-1.0,0.0,-2.0,-0.5,0.0,goal_tolerance_relaxed,2
+stability-smoke,known_environment_optimization,tb3_sandbox,-2.0,-0.5,0.0,-1.0,-0.5,0.0,stability_wait,2
+yaw-east-pos,known_environment_optimization,tb3_sandbox,-2.0,-0.5,0.785,-0.5,-0.5,0.0,baseline,1
+yaw-east-neg,known_environment_optimization,tb3_sandbox,-2.0,-0.5,-0.785,-0.5,-0.5,0.0,baseline,1
+yaw-north-pos,known_environment_optimization,tb3_sandbox,-2.0,-1.0,1.5708,-2.0,-0.5,0.0,baseline,1

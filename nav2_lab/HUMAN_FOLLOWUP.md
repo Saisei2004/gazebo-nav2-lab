@@ -45,3 +45,23 @@ Required next actions:
 
 The goal is not to stop execution. The goal is to move from baseline validation to analysis and systematic improvement.
 
+
+## 2026-06-11T14:35:00+09:00
+
+Human follow-up: Start optimization now.
+
+The baseline-only phase is complete enough. Do not continue treating the three original baseline rows as the main work. The next loops must run candidate parameter profiles and pose/yaw variants, while keeping a small baseline control.
+
+Immediate operating rules:
+1. Keep `nav2-batch-runner` alive; do not stop the continuous runner unless explicitly told.
+2. Use the expanded `config/repeated_trials.csv` as the active matrix.
+3. Treat `baseline` as the control condition, not the only condition.
+4. Compare every candidate against baseline by success rate first, then average duration.
+5. Focus first on two measurable problems: `failed_goal_rc_0` stability failures and slow `tb3-short-north` runs.
+6. If a candidate is worse after enough trials, remove or deprioritize it and write the reason in `reports/IMPROVEMENT_IDEAS.md`.
+7. Continue hourly reporting and GitHub push.
+
+Optimization phase success criteria:
+- reduce `failed_goal_rc_0` rate without reducing overall success rate;
+- reduce `tb3-short-north` average duration;
+- keep all changes tied to real CSV evidence.

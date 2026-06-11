@@ -18,6 +18,12 @@ goal_yaw="${GOAL_YAW:-0.0}"
 start_pose="${START_POSE:-$start_x,$start_y,$start_yaw}"
 goal_pose="${GOAL_POSE:-$goal_x,$goal_y,$goal_yaw}"
 params="${PARAMS:-baseline}"
+params_file=""
+if [[ "$params" == */* || "$params" == *.yaml ]]; then
+  params_file="$params"
+elif [[ -f "params/${params}.yaml" ]]; then
+  params_file="params/${params}.yaml"
+fi
 timeout_sec="${TRIAL_TIMEOUT_SEC:-180}"
 startup_timeout_sec="${STARTUP_TIMEOUT_SEC:-90}"
 logs_dir="${LOGS_DIR:-logs/trials}"
@@ -82,15 +88,21 @@ echo "world=$world_sdf"
 echo "map=$map_yaml"
 echo "start=$start_pose goal=$goal_pose"
 
-setsid ros2 launch nav2_bringup tb3_simulation_launch.py \
-    headless:=True \
-    use_rviz:=False \
-    slam:=False \
-    map:="$map_yaml" \
-    world:="$world_sdf" \
-    x_pose:="$start_x" \
-    y_pose:="$start_y" \
-    on_exit_shutdown:=true \
+launch_args=(
+  headless:=True
+  use_rviz:=False
+  slam:=False
+  map:="$map_yaml"
+  world:="$world_sdf"
+  x_pose:="$start_x"
+  y_pose:="$start_y"
+  on_exit_shutdown:=true
+)
+if [[ -n "$params_file" ]]; then
+  launch_args+=(params_file:="$params_file")
+fi
+
+setsid ros2 launch nav2_bringup tb3_simulation_launch.py "${launch_args[@]}" \
   > "$launch_log" 2>&1 &
 launch_pid="$!"
 
@@ -179,6 +191,7 @@ cat > "$summary_json" <<EOF
   "world_sdf": "$world_sdf",
   "map_yaml": "$map_yaml",
   "params": "$params",
+  "params_file": "$params_file",
   "start_pose": "$start_pose",
   "goal_pose": "$goal_pose",
   "status": "$status",

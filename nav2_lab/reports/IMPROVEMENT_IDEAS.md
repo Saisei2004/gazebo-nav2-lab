@@ -11,3 +11,11 @@ Append-only. Each idea needs a timestamp, run number, expected upside, and valid
 - idea: Treat MPPI, Regulated Pure Pursuit, and DWB as separate controller families.
 - expected_upside: Avoids mixing incompatible parameter assumptions.
 - validation_plan: Run each controller family on identical known and unknown scenario sets, then maintain separate Pareto fronts.
+
+
+## 2026-06-11T14:35:00+09:00 - Optimization phase started
+
+- Switched active matrix from baseline-only to baseline controls plus candidate profiles.
+- Candidate profiles: `fast_controller`, `goal_tolerance_relaxed`, `stability_wait`.
+- First targets: reduce `failed_goal_rc_0`; reduce `tb3-short-north` duration.
+- Evidence rule: keep candidate only if CSV shows equal/better success rate and better duration or stability.
