@@ -1,52 +1,52 @@
 # Hourly Nav2 Report
 
-- generated_at: 2026-06-17T05:07:01+09:00
-- total_trials: 5577
-- latest_git: d0e8692 hourly nav2 report 2026-06-17 04:07:01 +0900
+- generated_at: 2026-06-17T06:07:01+09:00
+- total_trials: 5604
+- latest_git: 1b92ec5 hourly nav2 report 2026-06-17 05:07:01 +0900
 
 ## Summary
 
 | experiment | trials | success | success_rate | avg_sec | min_sec | max_sec |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | 0 | 1 | 0 | 0.000 | 1.00 | 1.00 | 1.00 |
-| baseline-east-control | 258 | 232 | 0.899 | 5.05 | 1.00 | 8.00 |
-| baseline-north-control | 259 | 215 | 0.830 | 37.77 | 1.00 | 50.00 |
-| baseline-smoke-control | 258 | 218 | 0.845 | 3.41 | 1.00 | 6.00 |
-| fast-east | 518 | 450 | 0.869 | 4.91 | 1.00 | 7.00 |
-| fast-north | 518 | 451 | 0.871 | 39.86 | 0.00 | 50.00 |
-| relaxed-north | 518 | 445 | 0.859 | 35.05 | 1.00 | 51.00 |
-| relaxed-smoke | 518 | 460 | 0.888 | 3.32 | 1.00 | 6.00 |
+| baseline-east-control | 260 | 234 | 0.900 | 5.05 | 1.00 | 8.00 |
+| baseline-north-control | 261 | 217 | 0.831 | 37.70 | 1.00 | 50.00 |
+| baseline-smoke-control | 260 | 220 | 0.846 | 3.42 | 1.00 | 6.00 |
+| fast-east | 522 | 454 | 0.870 | 4.92 | 1.00 | 7.00 |
+| fast-north | 522 | 455 | 0.872 | 39.92 | 0.00 | 50.00 |
+| relaxed-north | 522 | 449 | 0.860 | 35.16 | 1.00 | 51.00 |
+| relaxed-smoke | 522 | 464 | 0.889 | 3.32 | 1.00 | 6.00 |
 | smoke-003-repeat | 654 | 556 | 0.850 | 3.51 | 0.00 | 6.00 |
 | stability-smoke | 10 | 0 | 0.000 |  |  |  |
 | tb3-short-east | 646 | 554 | 0.858 | 4.84 | 1.00 | 8.00 |
 | tb3-short-north | 642 | 552 | 0.860 | 40.25 | 1.00 | 51.00 |
-| yaw-east-neg | 259 | 217 | 0.838 | 41.36 | 0.00 | 121.00 |
-| yaw-east-pos | 259 | 227 | 0.876 | 13.65 | 1.00 | 54.00 |
-| yaw-north-pos | 259 | 222 | 0.857 | 3.89 | 1.00 | 6.00 |
+| yaw-east-neg | 261 | 219 | 0.839 | 41.38 | 0.00 | 121.00 |
+| yaw-east-pos | 261 | 229 | 0.877 | 13.65 | 1.00 | 54.00 |
+| yaw-north-pos | 260 | 222 | 0.854 | 3.88 | 1.00 | 6.00 |
 
 ## Status Counts
 
-- failed_goal_rc_0: 757
+- failed_goal_rc_0: 758
 - failed_goal_timeout: 11
 - runner_failed: 10
-- success: 4799
+- success: 4825
 
 ## Recent Trials
 
 | timestamp | experiment | status | success | duration_sec |
 | --- | --- | --- | --- | ---: |
-| 2026-06-17T04:42:20+0900 | baseline-north-control-r1 | failed_goal_rc_0 | false | 2 |
-| 2026-06-17T04:44:11+0900 | fast-east-r1 | success | true | 5 |
-| 2026-06-17T04:46:06+0900 | fast-east-r2 | success | true | 5 |
-| 2026-06-17T04:47:59+0900 | fast-north-r1 | success | true | 48 |
-| 2026-06-17T04:50:36+0900 | fast-north-r2 | success | true | 48 |
-| 2026-06-17T04:53:14+0900 | relaxed-smoke-r1 | failed_goal_rc_0 | false | 1 |
-| 2026-06-17T04:55:04+0900 | relaxed-smoke-r2 | success | true | 4 |
-| 2026-06-17T04:56:57+0900 | relaxed-north-r1 | success | true | 9 |
-| 2026-06-17T04:58:57+0900 | relaxed-north-r2 | success | true | 9 |
-| 2026-06-17T05:00:55+0900 | yaw-east-pos-r1 | success | true | 15 |
-| 2026-06-17T05:03:01+0900 | yaw-east-neg-r1 | success | true | 16 |
-| 2026-06-17T05:05:06+0900 | yaw-north-pos-r1 | success | true | 4 |
+| 2026-06-17T05:40:47+0900 | baseline-east-control-r1 | success | true | 5 |
+| 2026-06-17T05:42:42+0900 | baseline-north-control-r1 | success | true | 48 |
+| 2026-06-17T05:45:19+0900 | fast-east-r1 | success | true | 5 |
+| 2026-06-17T05:47:13+0900 | fast-east-r2 | success | true | 5 |
+| 2026-06-17T05:49:07+0900 | fast-north-r1 | success | true | 48 |
+| 2026-06-17T05:51:44+0900 | fast-north-r2 | success | true | 47 |
+| 2026-06-17T05:54:21+0900 | relaxed-smoke-r1 | success | true | 4 |
+| 2026-06-17T05:56:14+0900 | relaxed-smoke-r2 | success | true | 3 |
+| 2026-06-17T05:58:06+0900 | relaxed-north-r1 | success | true | 49 |
+| 2026-06-17T06:00:44+0900 | relaxed-north-r2 | success | true | 48 |
+| 2026-06-17T06:03:22+0900 | yaw-east-pos-r1 | success | true | 14 |
+| 2026-06-17T06:05:28+0900 | yaw-east-neg-r1 | success | true | 72 |
 
 ## Runner State
 
@@ -61,7 +61,8 @@ zunda: 1 windows (created Fri Feb 27 16:13:06 2026)
 ```text
 376851 bash -c cd ~/saisei_ws/gazebo_lab/nav2_lab && INTER_TRIAL_SLEEP_SEC=90 SLEEP_SEC=60 ./scripts/run_continuous_nav2_batches.sh | tee -a overseer/nav2-batch-runner.log
 376852 bash ./scripts/run_continuous_nav2_batches.sh
-1865584 bash -lc pgrep -af "run_continuous_nav2_batches|run_repeated_trials|run_nav2_trial|ros2 launch|forge_agent|overseer_agent" || true
+1935268 bash ./scripts/run_repeated_trials.sh config/repeated_trials.csv
+1997216 bash -lc pgrep -af "run_continuous_nav2_batches|run_repeated_trials|run_nav2_trial|ros2 launch|forge_agent|overseer_agent" || true
 ```
 
 ## Notes
